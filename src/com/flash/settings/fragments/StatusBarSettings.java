@@ -39,4 +39,3 @@ public class StatusBarSettings extends SettingsPreferenceFragment {
         return MetricsEvent.FLASH;
     }
 }
-

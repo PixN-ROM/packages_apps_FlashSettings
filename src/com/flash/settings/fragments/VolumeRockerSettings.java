@@ -80,4 +80,3 @@ public class VolumeRockerSettings extends SettingsPreferenceFragment implements
         return false;
     }
 }
-

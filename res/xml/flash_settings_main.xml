@@ -44,7 +44,7 @@
         android:title="@string/flash_buttons">
 
         <PreferenceScreen
-            android:fragment="com.flash.settings.fragments.NavBarSettings"
+            android:fragment="com.flash.settings.fragments.NavbarSettings"
             android:key="flash_navbar_settings"
             android:title="@string/navbar_settings_title"/>
 
