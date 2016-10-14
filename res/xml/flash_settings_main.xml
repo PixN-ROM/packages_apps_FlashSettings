@@ -44,6 +44,11 @@
         android:title="@string/flash_buttons">
 
         <PreferenceScreen
+            android:fragment="com.flash.settings.fragments.NavBarSettings"
+            android:key="flash_navbar_settings"
+            android:title="@string/navbar_settings_title"/>
+
+        <PreferenceScreen
             android:fragment="com.flash.settings.fragments.PowerMenuSettings"
             android:key="flash_powermenu_settings"
             android:title="@string/powermenu_settings_title"/>
@@ -52,6 +57,17 @@
             android:fragment="com.flash.settings.fragments.VolumeRockerSettings"
             android:key="flash_volumerocker_settings"
             android:title="@string/volumerocker_settings_title"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="flash_system"
+        android:title="@string/flash_system">
+
+        <PreferenceScreen
+            android:fragment="com.flash.settings.fragments.DisplaySettings"
+            android:key="flash_display_settings"
+            android:title="@string/display_settings_title"/>
 
     </PreferenceCategory>
 
