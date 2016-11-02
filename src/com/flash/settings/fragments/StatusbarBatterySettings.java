@@ -25,7 +25,6 @@ import android.content.res.Resources;
 import android.net.TrafficStats;
 import android.os.Bundle;
 import android.os.RemoteException;
-import android.support.v7.preference.CheckBoxPreference;
 import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceGroup;
@@ -64,8 +63,8 @@ public class StatusbarBatterySettings extends SettingsPreferenceFragment impleme
     private ListPreference mBatteryStyle;
     private ListPreference mBatteryPercent;
     private ColorPickerPreference mChargingColor;
-    private CheckBoxPreference mPercentInside;
-    private CheckBoxPreference mShowBolt;
+    private SystemSettingSwitchPreference mPercentInside;
+    private SystemSettingSwitchPreference mShowBolt;
     private int mShowPercent;
     private int mBatteryStyleValue;
     private ListPreference mBatteryEnable;
@@ -109,9 +108,9 @@ public class StatusbarBatterySettings extends SettingsPreferenceFragment impleme
         mChargingColor.setSummary(hexColor);
         mChargingColor.setOnPreferenceChangeListener(this);
 
-        mPercentInside = (CheckBoxPreference) findPreference(STATUSBAR_BATTERY_PERCENT_INSIDE);
+        mPercentInside = (SystemSettingSwitchPreference) findPreference(STATUSBAR_BATTERY_PERCENT_INSIDE);
 
-        mShowBolt = (CheckBoxPreference) findPreference(STATUSBAR_BATTERY_SHOW_BOLT);
+        mShowBolt = (SystemSettingSwitchPreference) findPreference(STATUSBAR_BATTERY_SHOW_BOLT);
 
         mBatteryEnable = (ListPreference) findPreference(STATUSBAR_BATTERY_ENABLE);
         mShowBattery = Settings.System.getInt(resolver,
@@ -171,7 +170,7 @@ public class StatusbarBatterySettings extends SettingsPreferenceFragment impleme
         mPercentInside.setEnabled(mShowBattery != 0 && mBatteryStyleValue < 3 && mShowPercent != 0);
         mShowBolt.setEnabled(mBatteryStyleValue < 3);
         mBatteryStyle.setEnabled(mShowBattery != 0);
-        mBatteryPercent.setEnabled(mShowBattery != 0);
+        mBatteryPercent.setEnabled(mShowBattery != 0 && mBatteryStyleValue != 3);
         mChargingCategory.setEnabled(mShowBattery != 0);
     }
 
