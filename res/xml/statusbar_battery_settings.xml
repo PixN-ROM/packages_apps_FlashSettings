@@ -37,7 +37,7 @@
             android:entries="@array/entries_battery_percent"
             android:entryValues="@array/values_battery_percent"
             android:persistent="false"
-            android:defaultValue="2"/>
+            android:defaultValue="0"/>
         <com.flash.settings.preferences.SystemSettingSwitchPreference
             android:key="statusbar_battery_percent_inside"
             android:title="@string/statusbar_percent_inside_title"
@@ -57,7 +57,7 @@
                 android:key="statusbar_battery_charging_color_enable"
                 android:title="@string/statusbar_battery_charging_color_enable_title"
                 android:summary="@string/statusbar_battery_charging_color_enable_summary"
-                android:defaultValue="true"/>
+                android:defaultValue="false"/>
             <com.flash.settings.preferences.ColorPickerPreference
                 android:key="statusbar_battery_charging_color"
                 android:title="@string/statusbar_battery_charging_color_title"
