@@ -86,7 +86,7 @@ public class StatusbarBatterySettings extends SettingsPreferenceFragment impleme
 
         mBatteryStyle = (ListPreference) findPreference(STATUSBAR_BATTERY_STYLE);
         mBatteryStyleValue = Settings.System.getInt(resolver,
-                Settings.System.STATUSBAR_BATTERY_STYLE, 0);
+                Settings.System.STATUSBAR_BATTERY_STYLE, 2);
 
         mBatteryStyle.setValue(Integer.toString(mBatteryStyleValue));
         mBatteryStyle.setSummary(mBatteryStyle.getEntry());
