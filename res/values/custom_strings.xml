@@ -324,6 +324,9 @@ device speaker</string>
     <string name="qs_tile_title_visibility_title">QS tile titles</string>
     <string name="qs_tile_title_visibility_summary_on">QS tile titles are on</string>
     <string name="qs_tile_title_visibility_summary_off">QS tile titles are off</string>
+    <!-- Advanced night mode tile -->
+    <string name="qs_night_brightness_toggle_title">Night mode low brightness</string>
+    <string name="qs_night_brightness_toggle_summary">Automatically set a low brightness when enabling night mode from tile. Disabling night mode will restore the previous user value.</string>
 
     <!-- Notification & Media fragment -->
     <string name="notification_media_settings_title">Media &amp; notifications</string>
