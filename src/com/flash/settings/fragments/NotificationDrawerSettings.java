@@ -35,12 +35,16 @@ import com.android.settings.SettingsPreferenceFragment;
 
 import com.flash.settings.preferences.CustomSeekBarPreference;
 
+import java.util.List;
+import java.util.ArrayList;
+
 public class NotificationDrawerSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
     private static final String QUICK_PULLDOWN = "quick_pulldown";
     private static final String PREF_SMART_PULLDOWN = "smart_pulldown";
     private static final String PREF_LOCK_QS_DISABLED = "lockscreen_qs_disabled";
+    private static final String QS_NIGHT_BRIGHTNESS_VALUE = "qs_night_brightness_value";
     private static final String PREF_COLUMNS = "qs_layout_columns";
     private static final String PREF_ROWS_PORTRAIT = "qs_rows_portrait";
     private static final String PREF_ROWS_LANDSCAPE = "qs_rows_landscape";
@@ -48,6 +52,8 @@ public class NotificationDrawerSettings extends SettingsPreferenceFragment imple
     private ListPreference mQuickPulldown;
     ListPreference mSmartPulldown;
     private SwitchPreference mLockQsDisabled;
+    private ListPreference mNightBrightValue;
+    private int mNightBrightValueVal;
     private CustomSeekBarPreference mQsColumns;
     private CustomSeekBarPreference mRowsPortrait;
     private CustomSeekBarPreference mRowsLandscape;
@@ -84,6 +90,13 @@ public class NotificationDrawerSettings extends SettingsPreferenceFragment imple
         } else {
             prefScreen.removePreference(mLockQsDisabled);
         }
+
+        mNightBrightValue = (ListPreference) findPreference(QS_NIGHT_BRIGHTNESS_VALUE);
+        mNightBrightValueVal = Settings.Secure.getInt(resolver,
+                Settings.Secure.QS_NIGHT_BRIGHTNESS_VALUE, 0);
+        mNightBrightValue.setValue(Integer.toString(mNightBrightValueVal));
+        mNightBrightValue.setSummary(mNightBrightValue.getEntry());
+        mNightBrightValue.setOnPreferenceChangeListener(this);
 
         mQsColumns = (CustomSeekBarPreference) findPreference(PREF_COLUMNS);
         int columnsQs = Settings.System.getInt(resolver,
@@ -128,7 +141,15 @@ public class NotificationDrawerSettings extends SettingsPreferenceFragment imple
             boolean checked = ((SwitchPreference)preference).isChecked();
             Settings.Secure.putInt(resolver, Settings.Secure.LOCK_QS_DISABLED, checked ? 1:0);
             return true;
-        } else if (preference == mQsColumns) {
+        } else if (preference == mNightBrightValue) {
+            mNightBrightValueVal = Integer.valueOf((String) newValue);
+            int index = mNightBrightValue.findIndexOfValue((String) newValue);
+            mNightBrightValue.setSummary(
+                    mNightBrightValue.getEntries()[index]);
+            Settings.Secure.putInt(resolver,
+                    Settings.Secure.QS_NIGHT_BRIGHTNESS_VALUE, mNightBrightValueVal);
+            return true;
+        }  else if (preference == mQsColumns) {
             int qsColumns = (Integer) newValue;
             Settings.System.putInt(resolver, Settings.System.QS_LAYOUT_COLUMNS, qsColumns * 1);
             return true;

@@ -82,6 +82,16 @@
             android:summary="@string/qs_night_brightness_toggle_summary"
             android:defaultValue="false" />
 
+        <ListPreference
+            android:key="qs_night_brightness_value"
+            android:title="@string/qs_night_brightness_value_title"
+            android:dialogTitle="@string/qs_night_brightness_value_dialog"
+            android:entries="@array/qs_night_brightness_value_entries"
+            android:entryValues="@array/qs_night_brightness_value_values"
+            android:summary="%s"
+            android:defaultValue="0"
+            android:dependency="qs_night_brightness_toggle" />
+
         <com.flash.settings.preferences.CustomSeekBarPreference
             android:key="qs_layout_columns"
             android:title="@string/qs_columns_title"
@@ -91,12 +101,12 @@
             android:persistent="false" />
 
         <com.flash.settings.preferences.CustomSeekBarPreference
-           android:key="qs_rows_portrait"
-           android:title="@string/qs_rows_portrait_title"
-           android:max="7"
-           settings:min="1"
-           settings:units=""
-           android:persistent="false" />
+            android:key="qs_rows_portrait"
+            android:title="@string/qs_rows_portrait_title"
+            android:max="7"
+            settings:min="1"
+            settings:units=""
+            android:persistent="false" />
 
         <com.flash.settings.preferences.CustomSeekBarPreference
            android:key="qs_rows_landscape"
