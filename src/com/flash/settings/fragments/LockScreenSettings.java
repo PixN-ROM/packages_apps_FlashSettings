@@ -1,6 +1,7 @@
 /*
  * Copyright (C) 2016 The Pure Nexus Project
  * Copyright (C) 2016 Flash ROM
+ * Copyright (C) 2016 PixN ROM
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,7 +16,7 @@
  * limitations under the License.
  */
 
-package com.flash.settings.fragments;
+package com.pixN.settings.fragments;
 
 import android.content.Context;
 import android.hardware.fingerprint.FingerprintManager;
@@ -29,8 +30,8 @@ import com.android.internal.widget.LockPatternUtils;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
-import com.flash.settings.utils.Utils;
-import com.flash.settings.preferences.SystemSettingSwitchPreference;
+import com.pixN.settings.utils.Utils;
+import com.pixN.settings.preferences.SystemSettingSwitchPreference;
 
 public class LockScreenSettings extends SettingsPreferenceFragment {
 

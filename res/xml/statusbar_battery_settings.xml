@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--  Copyright (C) 2015 The OmniROM Project
+      Copyright (C) 2016 PixN ROM
 
   This program is free software: you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
@@ -38,7 +39,7 @@
             android:entryValues="@array/values_battery_percent"
             android:persistent="false"
             android:defaultValue="0"/>
-        <com.flash.settings.preferences.SystemSettingSwitchPreference
+        <com.pixN.settings.preferences.SystemSettingSwitchPreference
             android:key="statusbar_battery_percent_inside"
             android:title="@string/statusbar_percent_inside_title"
             android:summary="@string/statusbar_percent_inside_summary"
@@ -48,17 +49,17 @@
             android:key="statusbar_category_charging"
             android:title="@string/statusbar_category_charging_title">
 
-            <com.flash.settings.preferences.SystemSettingSwitchPreference
+            <com.pixN.settings.preferences.SystemSettingSwitchPreference
                 android:key="statusbar_battery_charging_image"
                 android:title="@string/statusbar_charging_image_title"
                 android:summary="@string/statusbar_charging_image_summary"
                 android:defaultValue="true"/>
-            <com.flash.settings.preferences.SystemSettingSwitchPreference
+            <com.pixN.settings.preferences.SystemSettingSwitchPreference
                 android:key="statusbar_battery_charging_color_enable"
                 android:title="@string/statusbar_battery_charging_color_enable_title"
                 android:summary="@string/statusbar_battery_charging_color_enable_summary"
                 android:defaultValue="false"/>
-            <com.flash.settings.preferences.ColorPickerPreference
+            <com.pixN.settings.preferences.ColorPickerPreference
                 android:key="statusbar_battery_charging_color"
                 android:title="@string/statusbar_battery_charging_color_title"
                 android:persistent="false"

@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2011 The CyanogenMod Project
+ * Copyright (C) 2016 PixN ROM
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +15,7 @@
  * limitations under the License.
  */
 
-package com.flash.settings;
+package com.pixN.settings;
 
 import java.net.URISyntaxException;
 import java.util.ArrayList;
@@ -41,7 +42,7 @@ import android.widget.ExpandableListView;
 import android.widget.TextView;
 
 import com.android.settings.R;
-import com.flash.settings.ShortcutPickHelper.AppExpandableAdapter.GroupInfo;
+import com.pixN.settings.ShortcutPickHelper.AppExpandableAdapter.GroupInfo;
 
 public class ShortcutPickHelper {
 

@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2015 The Dirty Unicorns Project
+ * Copyright (C) 2016 PixN ROM
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +15,7 @@
  * limitations under the License.
  */
 
-package com.flash.settings.fragments;
+package com.pixN.settings.fragments;
 
 import com.android.internal.logging.MetricsLogger;
 import com.android.internal.logging.MetricsProto.MetricsEvent;
@@ -25,7 +26,7 @@ import android.app.ActionBar;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.UserHandle;
-import com.flash.settings.preferences.CustomSeekBarPreference;
+import com.pixN.settings.preferences.CustomSeekBarPreference;
 import net.margaritov.preference.colorpicker.ColorPickerPreference;
 import android.support.v7.preference.PreferenceCategory;
 import android.support.v14.preference.SwitchPreference;

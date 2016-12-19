@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2012 The CyanogenMod Project
+ * Copyright (C) 2016 PixN ROM
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +15,7 @@
  * limitations under the License.
  */
 
-package com.flash.settings.notificationlight;
+package com.pixN.settings.notificationlight;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
@@ -44,9 +45,9 @@ import com.android.internal.logging.MetricsProto.MetricsEvent;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
-import com.flash.settings.utils.PackageListAdapter;
-import com.flash.settings.utils.PackageListAdapter.PackageItem;
-import com.flash.settings.preferences.SystemSettingSwitchPreference;
+import com.pixN.settings.utils.PackageListAdapter;
+import com.pixN.settings.utils.PackageListAdapter.PackageItem;
+import com.pixN.settings.preferences.SystemSettingSwitchPreference;
 
 import java.util.ArrayList;
 import java.util.HashMap;

@@ -1,6 +1,7 @@
 /*
  * Copyright (C) 2015-2016 DirtyUnicorns Project
- *
+ * Copyright (C) 2016 PixN ROM
+ * 
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -17,11 +18,11 @@
  * ActionHandler framework
  */
 
-package com.flash.settings;
+package com.pixN.settings;
 
 import com.android.internal.utils.du.Config.ActionConfig;
 import com.android.settings.R;
-import com.flash.settings.CustomActionListAdapter;
+import com.pixN.settings.CustomActionListAdapter;
 
 import android.app.Activity;
 import android.app.AlertDialog;

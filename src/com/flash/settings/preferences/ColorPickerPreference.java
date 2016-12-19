@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2012 The CyanogenMod Project
+ * Copyright (C) 2016 PixN ROM
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +15,7 @@
  * limitations under the License.
  */
 
-package com.flash.settings.preferences;
+package com.pixN.settings.preferences;
 
 import android.app.AlertDialog;
 import android.content.Context;
@@ -40,7 +41,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.android.settings.R;
-import com.flash.settings.preferences.ColorPickerDialog;
+import com.pixN.settings.preferences.ColorPickerDialog;
 
 public class ColorPickerPreference extends Preference implements DialogInterface.OnDismissListener {
 

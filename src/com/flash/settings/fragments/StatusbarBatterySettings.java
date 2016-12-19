@@ -1,5 +1,6 @@
 /*
  *  Copyright (C) 2015 The OmniROM Project
+ *  Copyright (C) 2016 PixN ROM
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -15,7 +16,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
 */
-package com.flash.settings.fragments;
+package com.pixN.settings.fragments;
 
 import android.app.AlertDialog;
 import android.content.ContentResolver;
@@ -45,8 +46,8 @@ import com.android.settings.search.Indexable;
 import java.util.List;
 import java.util.ArrayList;
 
-import com.flash.settings.preferences.ColorPickerPreference;
-import com.flash.settings.preferences.SystemSettingSwitchPreference;
+import com.pixN.settings.preferences.ColorPickerPreference;
+import com.pixN.settings.preferences.SystemSettingSwitchPreference;
 
 public class StatusbarBatterySettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener, Indexable {

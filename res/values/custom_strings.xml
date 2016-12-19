@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Copyright (C) 2016 The Pure Nexus Project
      Copyright (C) 2016 Flash ROM
+     Copyright (C) 2016 PixN ROM
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -17,9 +18,9 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- Categories -->
-    <string name="flash_interface">Interface</string>
-    <string name="flash_buttons">Buttons</string>
-    <string name="flash_system">System</string>
+    <string name="pixN_interface">Interface</string>
+    <string name="pixN_buttons">Buttons</string>
+    <string name="pixN_system">System</string>
 
     <!-- Display fragment -->
     <string name="display_settings_title">Display</string>

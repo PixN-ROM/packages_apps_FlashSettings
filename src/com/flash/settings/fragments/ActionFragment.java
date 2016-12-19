@@ -1,6 +1,7 @@
 /*
  * Copyright (C) 2015 TeamEos project
- *
+ * Copyright (C) 2016 PixN ROM
+ * 
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -17,7 +18,7 @@
  * class that holds target widget state
  */
 
-package com.flash.settings.fragments;
+package com.pixN.settings.fragments;
 
 import java.util.ArrayList;
 
@@ -29,9 +30,9 @@ import com.android.internal.utils.du.Config;
 import com.android.internal.utils.du.Config.ActionConfig;
 import com.android.internal.utils.du.Config.ButtonConfig;
 
-import com.flash.settings.ShortcutPickHelper;
-import com.flash.settings.preferences.ActionPreference;
-import com.flash.settings.CustomActionListAdapter;
+import com.pixN.settings.ShortcutPickHelper;
+import com.pixN.settings.preferences.ActionPreference;
+import com.pixN.settings.CustomActionListAdapter;
 
 import android.app.AlertDialog;
 import android.app.Dialog;

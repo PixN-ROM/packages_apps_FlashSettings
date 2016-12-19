@@ -1,6 +1,7 @@
-/**
+/*
  * Copyright (C) 2016 The Pure Nexus Project
  * Copyright (C) 2016 Flash ROM
+ * Copyright (C) 2016 PixN ROM
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
  * use this file except in compliance with the License. You may obtain a copy
@@ -15,7 +16,7 @@
  * under the License.
  */
 
-package com.flash.settings.utils;
+package com.pixN.settings.utils;
 
 import android.app.Activity;
 import android.content.Context;

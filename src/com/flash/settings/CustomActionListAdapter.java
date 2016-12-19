@@ -1,6 +1,7 @@
 /*
  * Copyright (C) 2015 TeamEos project
- *
+ * Copyright (C) 2016 PixN ROM
+ * 
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -16,7 +17,7 @@
  * Adapter for displaying custom actions in a list
  */
 
-package com.flash.settings;
+package com.pixN.settings;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2014 TeamEos
+ * Copyright (C) 2016 PixN ROM
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +15,7 @@
  * limitations under the License.
  */
 
-package com.flash.settings.fragments;
+package com.pixN.settings.fragments;
 
 import java.util.ArrayList;
 
@@ -41,7 +42,7 @@ import com.android.internal.utils.du.DUActionUtils;
 import com.android.internal.utils.du.Config.ButtonConfig;
 import com.android.settings.R;
 
-import com.flash.settings.preferences.CustomSeekBarPreference;
+import com.pixN.settings.preferences.CustomSeekBarPreference;
 
 public class NavbarSettings extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 

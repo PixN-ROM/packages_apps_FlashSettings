@@ -1,6 +1,7 @@
 /*
  * Copyright (C) 2016 The Pure Nexus Project
  * Copyright (C) 2016 Flash ROM
+ * Copyright (C) 2016 PixN ROM
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,7 +16,7 @@
  * limitations under the License.
  */
 
-package com.flash.settings;
+package com.pixN.settings;
 
 import android.os.Bundle;
 import android.support.v7.preference.PreferenceScreen;
@@ -29,7 +30,7 @@ public class FlashSettings extends SettingsPreferenceFragment {
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
-        addPreferencesFromResource(R.xml.flash_settings_main);
+        addPreferencesFromResource(R.xml.pixN_settings_main);
         PreferenceScreen prefScreen = getPreferenceScreen();
     }
 
