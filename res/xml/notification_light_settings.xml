@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Copyright (C) 2012 The CyanogenMod Project
-     Copyright (C) 2016 PixN ROM
+     Copyright (C) 2016 Pixn ROM
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -22,11 +22,11 @@
         android:key="general_section"
         android:title="@string/notification_light_general_title">
 
-        <com.pixN.settings.preferences.SystemSettingSwitchPreference
+        <com.pixn.settings.preferences.SystemSettingSwitchPreference
             android:key="notification_light_pulse"
             android:title="@string/notification_light_title" />
 
-        <com.pixN.settings.notificationlight.ApplicationLightPreference
+        <com.pixn.settings.notificationlight.ApplicationLightPreference
             android:key="default"
             android:title="@string/notification_light_default_value"
             android:persistent="false"
@@ -38,18 +38,18 @@
         android:key="advanced_section"
         android:title="@string/advanced">
 
-        <com.pixN.settings.preferences.SystemSettingSwitchPreference
+        <com.pixn.settings.preferences.SystemSettingSwitchPreference
             android:key="notification_light_screen_on_enable"
             android:title="@string/notification_light_screen_on"
             android:dependency="notification_light_pulse" />
 
-        <com.pixN.settings.preferences.SystemSettingSwitchPreference
+        <com.pixn.settings.preferences.SystemSettingSwitchPreference
             android:key="allow_lights"
             android:title="@string/allow_lights_title"
             android:dependency="notification_light_pulse"
             android:defaultValue="true" />
 
-        <com.pixN.settings.preferences.SystemSettingSwitchPreference
+        <com.pixn.settings.preferences.SystemSettingSwitchPreference
             android:key="notification_light_pulse_custom_enable"
             android:title="@string/notification_light_use_custom"
             android:dependency="notification_light_pulse" />

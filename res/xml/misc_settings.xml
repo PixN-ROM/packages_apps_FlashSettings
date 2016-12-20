@@ -1,5 +1,5 @@
 <!-- Copyright (C) 2016 Flash ROM
-     Copyright (C) 2016 PixN ROM
+     Copyright (C) 2016 Pixn ROM
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -16,7 +16,7 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-    <com.pixN.settings.preferences.SystemSettingSwitchPreference
+    <com.pixn.settings.preferences.SystemSettingSwitchPreference
          android:key="toast_icon"
          android:title="@string/toast_icon_title"
          android:summary="@string/toast_icon_summary"
@@ -30,7 +30,7 @@
          android:entries="@array/entries_scrollingcache"
          android:entryValues="@array/values_scrollingcache" />
 
-    <com.pixN.settings.preferences.CustomSeekBarPreference
+    <com.pixn.settings.preferences.CustomSeekBarPreference
          android:key="screenshot_delay"
          android:title="@string/screenshot_delay_title"
          android:summary="@string/screenshot_delay_summary"

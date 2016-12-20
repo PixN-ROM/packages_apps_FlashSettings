@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Copyright (C) 2016 The Pure Nexus Project
      Copyright (C) 2016 Flash ROM
-     Copyright (C) 2016 PixN ROM
+     Copyright (C) 2016 Pixn ROM
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -35,7 +35,7 @@
             android:entryValues="@array/smart_pulldown_values"
             android:persistent="false" />
 
-        <com.pixN.settings.preferences.SystemSettingSwitchPreference
+        <com.pixn.settings.preferences.SystemSettingSwitchPreference
             android:key="force_expanded_notifications"
             android:title="@string/notification_force_expand_title"
             android:summary="@string/notification_force_expand_summary"
@@ -46,31 +46,31 @@
     <PreferenceCategory
         android:title="@string/qs_panel_title">
 
-        <com.pixN.settings.preferences.SecureSettingSwitchPreference
+        <com.pixn.settings.preferences.SecureSettingSwitchPreference
             android:key="qs_show_brightness"
             android:title="@string/qs_brightness_slider_title"
             android:summary="@string/qs_brightness_slider_summary"
             android:defaultValue="true"/>
 
-        <com.pixN.settings.preferences.SystemSettingSwitchPreference
+        <com.pixn.settings.preferences.SystemSettingSwitchPreference
             android:key="qs_show_brightness_icon"
             android:title="@string/brightness_icon_title"
             android:summary="@string/brightness_icon_summary"
             android:dependency="qs_show_brightness"
             android:defaultValue="false"/>
 
-        <com.pixN.settings.preferences.SystemSettingSwitchPreference
+        <com.pixn.settings.preferences.SystemSettingSwitchPreference
             android:key="quick_settings_vibrate"
             android:title="@string/quick_settings_vibrate_title"
             android:summary="@string/quick_settings_vibrate_summary"
             android:defaultValue="false"/>
 
-        <com.pixN.settings.preferences.SecureSettingSwitchPreference
+        <com.pixn.settings.preferences.SecureSettingSwitchPreference
             android:key="lockscreen_qs_disabled"
             android:title="@string/lockscreen_qs_disabled_title"
             android:summary="@string/lockscreen_qs_disabled_summary"/>
 
-        <com.pixN.settings.preferences.CustomSeekBarPreference
+        <com.pixn.settings.preferences.CustomSeekBarPreference
             android:key="qs_layout_columns"
             android:title="@string/qs_columns_title"
             android:max="7"

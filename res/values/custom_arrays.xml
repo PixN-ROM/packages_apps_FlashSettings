@@ -371,8 +371,8 @@
     </string-array>
 
     <string-array name="systemui_navbar_settings_fragments" translatable="false">
-        <item>com.pixN.settings.fragments.SmartbarSettings</item>
-        <item>com.pixN.settings.fragments.FlingSettings</item>
+        <item>com.pixn.settings.fragments.SmartbarSettings</item>
+        <item>com.pixn.settings.fragments.FlingSettings</item>
     </string-array>
 
     <string-array name="systemui_navbar_mode_settings">
