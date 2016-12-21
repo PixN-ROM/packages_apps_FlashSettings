@@ -25,13 +25,13 @@
             android:entryValues="@array/values_battery_percent"
             android:persistent="false"
             android:defaultValue="1"/>
-     <!--   <ListPreference
+        <ListPreference
             android:key="statusbar_battery_style"
             android:title="@string/battery_style_title"
             android:entries="@*android:array/entries_battery_styles"
             android:entryValues="@*android:array/values_battery_styles"
             android:persistent="false"
-            android:defaultValue="0"/> -->
+            android:defaultValue="0"/> 
         <ListPreference
             android:key="statusbar_battery_percent"
             android:title="@string/battery_percent_title"
