@@ -50,7 +50,7 @@
         android:summary="@string/network_traffic_autohide_summary"
         android:defaultValue="false" />
 
-    <com.flash.settings.preferences.CustomSeekBarPreference
+    <com.pixn.settings.preferences.CustomSeekBarPreference
         android:key="network_traffic_autohide_threshold"
         android:title="@string/network_traffic_autohide_threshold"
         android:max="100"

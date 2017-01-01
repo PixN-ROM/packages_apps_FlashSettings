@@ -371,8 +371,8 @@
     </string-array>
 
     <string-array name="systemui_navbar_settings_fragments" translatable="false">
-        <item>com.flash.settings.fragments.SmartbarSettings</item>
-        <item>com.flash.settings.fragments.FlingSettings</item>
+        <item>com.pixn.settings.fragments.SmartbarSettings</item>
+        <item>com.pixn.settings.fragments.FlingSettings</item>
     </string-array>
 
     <string-array name="systemui_navbar_mode_settings">
@@ -485,7 +485,7 @@
 
     <string-array name="text_charging_symbol_entries" translatable="false">
         <item>@string/text_charging_symbol_default</item>
-        <item>@string/text_charging_symbol_flash</item>
+        <item>@string/text_charging_symbol_pixn</item>
         <item>@string/text_charging_symbol_tilde</item>
     </string-array>
 

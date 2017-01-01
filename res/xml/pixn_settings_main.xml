@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2016 The Pure Nexus Project
+     Copyright (C) 2016 Flash ROM
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+        android:title="@string/pixn_settings_title" >
+
+    <PreferenceCategory
+        android:key="pixn_interface"
+        android:title="@string/pixn_interface">
+
+        <PreferenceScreen
+            android:fragment="com.pixn.settings.fragments.LockScreenSettings"
+            android:key="pixn_lockscreen_settings"
+            android:title="@string/lockscreen_settings_title"/>
+
+        <PreferenceScreen
+            android:fragment="com.pixn.settings.fragments.NotificationDrawerSettings"
+            android:key="pixn_notification_drawer_settings"
+            android:title="@string/notification_drawer_settings_title"/>
+
+        <PreferenceScreen
+            android:fragment="com.pixn.settings.fragments.StatusBarSettings"
+            android:key="pixn_statusbar_settings"
+            android:title="@string/statusbar_settings_title"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="pixn_buttons"
+        android:title="@string/pixn_buttons">
+
+        <PreferenceScreen
+            android:fragment="com.pixn.settings.fragments.NavbarSettings"
+            android:key="pixn_navbar_settings"
+            android:title="@string/navbar_settings_title"/>
+
+        <PreferenceScreen
+            android:fragment="com.pixn.settings.fragments.PowerMenuSettings"
+            android:key="pixn_powermenu_settings"
+            android:title="@string/powermenu_settings_title"/>
+
+        <PreferenceScreen
+            android:fragment="com.pixn.settings.fragments.VolumeRockerSettings"
+            android:key="pixn_volumerocker_settings"
+            android:title="@string/volumerocker_settings_title"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="pixn_system"
+        android:title="@string/pixn_system">
+
+        <PreferenceScreen
+            android:fragment="com.pixn.settings.fragments.DisplaySettings"
+            android:key="pixn_display_settings"
+            android:title="@string/display_settings_title"/>
+
+        <PreferenceScreen
+            android:fragment="com.pixn.settings.fragments.NotificationMediaSettings"
+            android:key="pixn_notification_media_settings"
+            android:title="@string/notification_media_settings_title"/>
+
+        <PreferenceScreen
+            android:fragment="com.pixn.settings.fragments.MiscSettings"
+            android:key="pixn_misc_settings"
+            android:title="@string/misc_settings_title"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

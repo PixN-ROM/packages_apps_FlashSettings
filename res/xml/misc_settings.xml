@@ -15,7 +15,7 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-    <com.flash.settings.preferences.SystemSettingSwitchPreference
+    <com.pixn.settings.preferences.SystemSettingSwitchPreference
          android:key="toast_icon"
          android:title="@string/toast_icon_title"
          android:summary="@string/toast_icon_summary"
@@ -29,7 +29,7 @@
          android:entries="@array/entries_scrollingcache"
          android:entryValues="@array/values_scrollingcache" />
 
-    <com.flash.settings.preferences.CustomSeekBarPreference
+    <com.pixn.settings.preferences.CustomSeekBarPreference
          android:key="screenshot_delay"
          android:title="@string/screenshot_delay_title"
          android:summary="@string/screenshot_delay_summary"

@@ -21,7 +21,7 @@
         android:key="power_category"
         android:title="@string/power_category" >
 
-        <com.flash.settings.preferences.SystemSettingSwitchPreference
+        <com.pixn.settings.preferences.SystemSettingSwitchPreference
             android:key="lockscreen_enable_power_menu"
             android:title="@string/lockscreen_enable_power_menu_title"
             android:defaultValue="true" />
@@ -35,7 +35,7 @@
             android:summary="@string/power_menu_animation_summary"
             android:persistent="false" />
 
-        <com.flash.settings.preferences.CustomSeekBarPreference
+        <com.pixn.settings.preferences.CustomSeekBarPreference
             android:key="power_reboot_dialog_dim"
             android:title="@string/powermenu_dialog_dim"
             android:max="100"

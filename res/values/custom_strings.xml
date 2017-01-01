@@ -17,9 +17,9 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- Categories -->
-    <string name="flash_interface">Interface</string>
-    <string name="flash_buttons">Buttons</string>
-    <string name="flash_system">System</string>
+    <string name="pixn_interface">Interface</string>
+    <string name="pixn_buttons">Buttons</string>
+    <string name="pixn_system">System</string>
 
     <!-- Display fragment -->
     <string name="display_settings_title">Display</string>
@@ -347,8 +347,8 @@ device speaker</string>
     <string name="battery_low_notif_title">Low battery notification</string>
     <string name="battery_low_notif_summary">Show low battery notification when enabled</string>
     <!-- Flashlight notification -->
-    <string name="flashlight_notification_title">Flashlight notification</string>
-    <string name="flashlight_notification_summary">Enable notification for when the flashlight is on</string>
+    <string name="Flashlight_notification_title">Flashlight notification</string>
+    <string name="Flashlight_notification_summary">Enable notification for when the Flashlight is on</string>
     <!-- double tap power button vibration -->
     <string name="dbl_tap_vib_title">Double tap power for camera vibration</string>
     <string name="dbl_tap_vib_summary">Vibrate on double tap of power button when enabled</string>
@@ -572,7 +572,7 @@ device speaker</string>
     <string name="text_charging_symbol_title">Charging symbol near percentage text</string>
     <string name="text_charging_symbol_dialog">Show a symbol near percentage text outside the battery icon when charging</string>
     <string name="text_charging_symbol_default">Disabled</string>
-    <string name="text_charging_symbol_flash">Flash</string>
+    <string name="text_charging_symbol_pixn">PixN</string>
     <string name="text_charging_symbol_tilde">Tilde</string>
 
 </resources>
