@@ -36,7 +36,7 @@ public class NotificationMediaSettings extends SettingsPreferenceFragment implem
 
     private static final String KEY_CAMERA_SOUNDS = "camera_sounds";
     private static final String PROP_CAMERA_SOUND = "persist.sys.camera-sound";
-    private static final String FLASHLIGHT_NOTIFICATION = "pixnlight_notification";
+    private static final String FLASHLIGHT_NOTIFICATION = "Flashlight_notification";
     private static final String KEY_HEADS_UP_SETTINGS = "heads_up_settings";
 
     private SwitchPreference mCameraSounds;
